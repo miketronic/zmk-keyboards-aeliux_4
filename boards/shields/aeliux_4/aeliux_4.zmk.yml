@@ -1,0 +1,8 @@
+file_format: "1"
+id: aeliux_4
+name: AELIUX_4
+type: shield
+url: https://github.com/miketronic/aeliux_4
+requires: [pro_micro]
+features:
+  - keys
