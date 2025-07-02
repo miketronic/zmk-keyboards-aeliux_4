@@ -1,5 +1,5 @@
 # Copyright (c) 2025 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config SHIELD_AELIUX_BLE
-    def_bool $(shields_list_contains,aeliux_ble)
+config SHIELD_AELIUX_4
+    def_bool $(shields_list_contains,aeliux_4)
