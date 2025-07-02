@@ -1,9 +1,9 @@
 # Copyright (c) 2025 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_AELIUX
+if SHIELD_AELIUX_BLE
   
 config ZMK_KEYBOARD_NAME
-    default "Aeliux"
+    default "Aeliux BLE"
 
 endif
