@@ -50,7 +50,7 @@
 
     aliases {
         led-red = &led0; 
-        led-yellow = &led1;
+        led-blue = &led1;
         led-green = &led2;
     };
 
@@ -61,7 +61,7 @@
             gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;  // red LED, connected to P1.01
         };
         led1: led_1 {
-            gpios = <&gpio1 2 GPIO_ACTIVE_HIGH>;  // yellow LED, connected to P1.02
+            gpios = <&gpio1 2 GPIO_ACTIVE_HIGH>;  // yellow (blue) LED, connected to P1.02
         };
         led2: led_2 {
             gpios = <&gpio1 7 GPIO_ACTIVE_HIGH>;  // green LED, connected to P1.07
