@@ -15,9 +15,15 @@
 #define ALPHA       0
 #define SYMBOL      1
 #define NUMBER      2
+#define FUNCTION    3
+#define MACRO       4
+#define MOUSE       5
 
-#define NUMW   &lt NUMBER W
-#define SYMZ   &lt SYMBOL Z
+#define ENUM    &lt NUMBER ESC
+#define ZFN     &lt FUNCTION Z
+#define QSYM    &lt SYMBOL Q
+#define AMACRO  &lt MACRO A
+#define PMOUSE  &lt MOUSE P
 
 &mt {
     tapping-term-ms = <160>;
@@ -40,13 +46,6 @@
     };
 
     behaviors {
-
-        qesc: tap_dance_qesc {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp Q>, <&kp ESC>;
-        };
 
         bkt: tap_dance_bracket {
             compatible = "zmk,behavior-tap-dance";
@@ -94,11 +93,11 @@
         compatible = "zmk,keymap";
 
         ALPHA_layer {
-            display-name = "AVA";  
+            display-name = "ALPHA";  
             bindings = <
-                &kp ESC  &qesc NUMW  &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P    &kp BSPC &kp RIGHT
-                &kp TAB  &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI &kp SQT &kp UP
-                &kp LSHFT SYMZ  &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH &kp RSHFT &kp LEFT
+                ENUM  QSYM  &kp W  &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P    &kp BSPC
+                &kp TAB  AMACRO &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI
+                &kp LSHFT ZFN  &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH &kp RSHFT &kp LEFT
                 &kp LCTRL &kp GUI &kp ALT &kp SPACE &kp SPACE &kp SPACE &kp RET &kp RET &kp RET &kp DEL &kp BSPC &kp DEL &kp DOWN
             >;
         };
