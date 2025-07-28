@@ -2,7 +2,9 @@
 # SPDX-License-Identifier: MIT
 
 if SHIELD_AELIUX_4
-  
+
+CONFIG_PINCTRL=y
+
 config ZMK_KEYBOARD_NAME
     default "Aeliux 4"
 
