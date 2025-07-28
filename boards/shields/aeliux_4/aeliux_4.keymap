@@ -27,10 +27,10 @@
 #define FUNCTION    3
 #define MOUSE       4
 
-#define ENUM    &lt NUMBER ESC
-#define ZFN     &lt FUNCTION Z
-#define QSYM    &lt SYMBOL Q
-#define PMOUSE  &lt MOUSE P
+#define ENUM    &lt 2 ESC
+#define ZFN     &lt 3 Z
+#define QSYM    &lt 1 Q
+#define PMOUSE  &lt 4 P
 
 &mt {
     tapping-term-ms = <160>;
