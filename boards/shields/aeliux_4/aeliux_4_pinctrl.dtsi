@@ -1,4 +1,11 @@
 #include <dt-bindings/led/led.h>
+#include "aeliux_4.dtsi"
+
+/ {
+    chosen {
+        zmk,backlight = &backlight;
+    };
+};
 
 &pinctrl {
     pwm0_default: pwm0_default {
@@ -41,8 +48,4 @@
         };
     };
 };
-/ {
-    chosen {
-        zmk,backlight = &backlight;
-    };
-};
+
