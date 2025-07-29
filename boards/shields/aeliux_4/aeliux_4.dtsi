@@ -100,7 +100,7 @@
             gpios = <&gpio1 1 (GPIO_ACTIVE_LOW)>;  // red LED, connected to P1.01
         };
         led1: led_1 {
-            gpios = <&gpio1 2 (GPIO_ACTIVE_LOW)>;  // yellow (blue) LED, connected to P1.02
+            gpios = <&gpio1 2 (GPIO_ACTIVE_LOW)>;  // blue LED, connected to P1.02
         };
         led2: led_2 {
             gpios = <&gpio1 7 (GPIO_ACTIVE_LOW)>;  // green LED, connected to P1.07
