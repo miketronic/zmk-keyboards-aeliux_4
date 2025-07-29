@@ -4,6 +4,7 @@
  * AELIUX 4
  */
 
+#include "aeliux_4.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
 / {
     chosen {
