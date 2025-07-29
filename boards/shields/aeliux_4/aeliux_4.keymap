@@ -174,7 +174,7 @@
         MOUSE_layer {
             display-name = "MOUSE";  
             bindings = <
-                &none  &none  &none  &none  &none  &none  &none  &none  &none &none &none &bootloader
+                &none  &kp A  &none  &none  &none  &none  &none  &none  &none &none &studio_unlock &bootloader
                 &none  &none  &none  &none  &none  &none  &none  &none  &none &none &none 
                 &none  &none  &none  &none  &none  &none  &none  &none  MS_U MM_U MS_D 
                 MCK  RCK  LCK               &kp SPACE  &kp RET          MM_L MM_D MM_R
