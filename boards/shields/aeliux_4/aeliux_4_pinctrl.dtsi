@@ -1,5 +1,4 @@
 #include <dt-bindings/led/led.h>
-#include "aeliux_4.dtsi"
 
 / {
     chosen {
