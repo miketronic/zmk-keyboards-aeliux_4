@@ -24,7 +24,7 @@
             , <&pro_micro 1 (GPIO_ACTIVE_HIGH)> // COL11
             ;
         row-gpios
-            = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW0
+            = <&gpio1 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // green LED, connected to P1.07
             , <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW1
             , <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW2
             , <&pro_micro 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW3
