@@ -96,13 +96,13 @@
         compatible = "gpio-leds";
         status = "okay";
         led0: led_0 {
-            gpios = <&gpio0 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;  // red LED, connected to P0.15
+            gpios = <&gpio1 1 (GPIO_ACTIVE_HIGH)>;  // red LED, connected to P1.01
         };
         led1: led_1 {
-            gpios = <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;  // blue LED, connected to P1.02
+            gpios = <&gpio0 15 (GPIO_ACTIVE_HIGH)>;  // blue LED, connected to P0.15
         };
         led2: led_2 {
-            gpios = <&gpio1 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;  // green LED, connected to P1.07
+            gpios = <&gpio1 7 (GPIO_ACTIVE_HIGH)>;  // green LED, connected to P1.07
         };
     };
    
