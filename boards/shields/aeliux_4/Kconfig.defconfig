@@ -35,11 +35,11 @@ config CONFIG_INDICATOR_LED_SHOW_CRITICAL_BATTERY_CHANGES
 
 config INDICATOR_LED_SHOW_BLE
     bool "Indicate BLE status on startup and profile change with a sequence of blinks"
-        default y
+        default n
 
 config INDICATOR_LED_SHOW_PERIPHERAL_BLE
     bool "Indicate on the peripheral half of a split what its connection status is, with a sequence of blinks."
-        default y
+        default n
     depends on INDICATOR_LED_SHOW_BLE
         help
             Requires INDICATOR_LED_SHOW_BLE to be enabled.
@@ -62,14 +62,14 @@ config INDICATOR_LED_BATTERY_LEVEL_CRITICAL
 
 config INDICATOR_LED_BATTERY_HIGH_BLINK_REPEAT
     int "High battery level blink repeat count"
-    default 2
+    default 3
 
 config INDICATOR_LED_BATTERY_LOW_BLINK_REPEAT
     int "Low battery level blink repeat count"
-    default 2
+    default 5
 
 config INDICATOR_LED_BATTERY_CRITICAL_BLINK_REPEAT
     int "Critical battery level blink repeat count"
-    default 2
+    default 7
 
 endif
