@@ -7,6 +7,9 @@ if SHIELD_AELIUX_4
 config ZMK_KEYBOARD_NAME
     default "Aeliux 4"
 
+config SPI
+    default y
+
 endif
 
 
