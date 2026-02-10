@@ -85,5 +85,26 @@
         };
     };
 
+  aliases {
+      led-red = &led0;
+      led-green = &led1;
+      led-blue = &led2;
+   };
+
+   leds {
+      compatible = "gpio-leds";
+      status = "okay";
+      led0: led_0 {
+        gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;  // red LED, connected to P1.01
+      };
+      led1: led_1 {
+        gpios = <&gpio1 7 GPIO_ACTIVE_HIGH>;  // green LED, connected to P1.07
+      };
+      led2: led_2 {
+        gpios = <&gpio1 12 GPIO_ACTIVE_HIGH>;  // yellow LED, connected to P1.02
+      };
+   };
+
+
    
 };
