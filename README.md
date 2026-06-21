@@ -4,7 +4,7 @@
 * Bluetooth wireless
 * 42 keys
 * MX Hotswap
-* Gasket-mount ready (case WIP)
+* Gasket-mount or full deep case
 * Simple, no frills typing enjoyment!
 
 ---
